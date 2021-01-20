@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>IBGE API</title>
+    <script src="plotly-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href='estilo.css'>
+    <link rel="stylesheet" type="text/css" href='Bootstrap/css/bootstrap.css'>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-controller="Main as main">
+<div class="jumbotron">
+    <form>
+        <input type="text" id="nome" placeholder="Nome"> 
+        <button type="button" ng-click="Buscar()">Buscar</button>
+    </form>
+    <div id="resultado"></div>
+    <div id="myDiv"></div>
+</div>
+<div class="jumbotron">
+    <h4 id="titulo"></h4><br>
+    <button type="button" ng-click="Pib();">PIB</button><br>
+    <br><div id="PIB"></div><br>
+</div>
+</body>
+</html>
+<!-- Gabriel Lopes - FEI -->
